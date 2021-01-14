@@ -66,4 +66,38 @@ input {
   margin-top: 16px;
 }
 
+.menu-1 {
+  display: flex;
+  justify-content: center;
+  border: black solid 1px;
+  margin: 24px 20px;
+  position: relative;
+}
+
+.menu-2 {
+  display: flex;
+  justify-content: center;
+  border: black solid 1px;
+  margin: 24px 20px;
+  position: relative;
+}
+
+.menu-3 {
+  display: flex;
+  justify-content: center;
+  border: black solid 1px;
+  margin: 24px 20px;
+  position: relative;
+}
+
+.rounded-number {
+  border-radius: 50%;
+  background-color: #A271E0;
+  color: white;
+  padding: 2px 7px;
+  position: absolute;
+  left: -11px;
+  bottom: -2px;
+}
+
 /*# sourceMappingURL=style.css.map */
