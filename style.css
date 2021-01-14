@@ -17,7 +17,7 @@ header {
   box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2);
 }
 
-form {
+.map-input-localisation {
   display: flex;
   justify-content: center;
   background-color: #ededed;
