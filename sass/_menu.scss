@@ -15,6 +15,14 @@
     position: relative;
 }
 
+.menu-1:hover {
+    background-color: #F7F1FF;
+
+    .position-icon-fontawesome {
+        color: #9356DC;
+    }
+}
+
 .menu-2 {
     display: flex;
     justify-content: center;
@@ -27,6 +35,14 @@
     position: relative;
 }
 
+.menu-2:hover {
+    background-color: #F7F1FF;
+
+    .position-icon-fontawesome {
+        color: #9356DC;
+    }
+}
+
 .menu-3 {
     display: flex;
     justify-content: center;
@@ -37,6 +53,14 @@
     padding-bottom: 12px;
     margin: 24px 20px;
     position: relative;
+}
+
+.menu-3:hover {
+    background-color: #F7F1FF;
+
+    .position-icon-fontawesome {
+        color: #9356DC;
+    }
 }
 
 .rounded-number {
