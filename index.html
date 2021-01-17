@@ -21,35 +21,35 @@
     </header>
 
     <nav>
-        <form method="get">
+        <form method="get" id="form-my-food">
             <div class="map-input-localisation">
                 <i class="fas fa-map-marker-alt center-icon-map"></i>
-                <input type="text" id="localisation">
+                <input type="text" id="localisation" value="Paris, Belleville">
             </div> 
             <div class="explication-reservation-menu">
                 <h2>Réservez le menu qui vous convient</h2>
                 <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins</h3>
-                <button type="submit" id="localisation" class="button-explorer-restaurant">Explorer nos restaurants</button>
+                <button type="submit" form="form-my-food" class="button-explorer-restaurant">Explorer nos restaurants</button>
             </div>     
         </form>
     </nav>
 
     <main>
         <div>
-            <h2>Fonctionnement</h2>
+            <h2 class="margin-fonctionnement">Fonctionnement</h2>
             <div class="menu-1">
                 <p class="rounded-number">1</p>
-                <i class="fas fa-mobile-alt"></i>
+                <p class="position-icon-fontawesome"><i class="fas fa-mobile-alt"></i></p>
                 <p>Choisissez un restaurant</p>
             </div>
             <div class="menu-2">
                 <p class="rounded-number">2</p>
-                <i class="fas fa-list-ul"></i>
+                <p class="position-icon-fontawesome"><i class="fas fa-list-ul"></i></p>
                 <p>Composez votre menu</p>
             </div>
             <div class="menu-3">
                 <p class="rounded-number">3</p>
-                <i class="fas fa-store"></i>
+                <p class="position-icon-fontawesome"><i class="fas fa-store"></i></p>
                 <p>Dégustez au restaurant</p>
             </div>
         </div>
@@ -57,20 +57,20 @@
 
     <article id="restaurants">
         <h2>Restaurants</h2>
-        <div>
-            <img src="" alt="">
+        <div class="cards-restaurant">
+            <img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#">
             <p>La palette du goût</p>
             <p>Ménilmontant</p>
             <i class="far fa-heart"></i>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="cards-restaurant">
+            <img src="" alt="#">
             <p>La note enchantée</p>
             <p>Charonne</p>
             <i class="far fa-heart"></i>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="cards-restaurant">
+            <img src="" alt="#">
             <p>A la française</p>
             <p>Cité Rouge</p>
             <i class="far fa-heart"></i>
