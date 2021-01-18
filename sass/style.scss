@@ -4,9 +4,14 @@
 // fontawesome
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
-// components 
-@import "_defaults.scss";
-@import "_form.scss";
-@import "_menu.scss";
-@import "_article-restaurants.scss";
-@import "_footer.scss";
+// components index
+@import "index/_defaults.scss";
+@import "index/_form.scss";
+@import "index/_menu.scss";
+@import "index/_article-restaurants.scss";
+@import "index/_footer.scss";
+@import "index/_button.scss";
+@import "menu-francaise/_main-francaise.scss";
+@import "menu-francaise/_cards-francaise.scss";
+
+// components menu a la françaises
