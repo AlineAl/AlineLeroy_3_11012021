@@ -240,17 +240,70 @@ footer p {
   height: 256px;
 }
 
+.h1-main-heart {
+  display: flex;
+  justify-content: space-between;
+}
+.h1-main-heart h1 {
+  padding-left: 16px;
+  font-weight: lighter;
+}
+.h1-main-heart p {
+  padding-right: 38px;
+}
+.h1-main-heart h1, .h1-main-heart p {
+  font-size: 28px;
+}
+
 .font-h2-francaise {
   font-family: "Shrikhand", "sans-serif";
 }
 
-.card-generale {
-  background-color: #FFFFFF;
+.card-generale-main {
+  background-color: #F6F6F6;
   position: absolute;
   top: 204px;
   border-radius: 46px 46px 0px 0px;
   width: 100%;
   padding-top: 16px;
+}
+
+.card-generale-entrees-francaise {
+  background-color: #F6F6F6;
+  padding-top: 40px;
+  padding-left: 16px;
+}
+.card-generale-entrees-francaise h3 {
+  font-weight: lighter;
+}
+
+.cards-entree-francaise {
+  background-color: white;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.cards-entree-francaise h3 {
+  font-weight: 600;
+  margin: 0px;
+  padding-bottom: 4px;
+  padding-top: 12px;
+  padding-left: 8px;
+}
+
+.flex-plat-prix {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-plat-prix p {
+  margin: 0px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+}
+
+.p-prix {
+  padding-right: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
