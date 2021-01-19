@@ -268,23 +268,36 @@ footer p {
   padding-top: 16px;
 }
 
-.card-generale-entrees-francaise {
+.card-generale-entree-francaise {
   background-color: #F6F6F6;
   padding-top: 40px;
   padding-left: 16px;
 }
-.card-generale-entrees-francaise h3 {
+.card-generale-entree-francaise h3 {
   font-weight: lighter;
 }
 
-.cards-entree-francaise {
+#no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.card-generale-plat-francaise {
+  background-color: #F6F6F6;
+  padding-top: 30px;
+  padding-left: 16px;
+}
+.card-generale-plat-francaise h3 {
+  font-weight: lighter;
+}
+
+.cards-menu-francaise {
   background-color: white;
   margin-right: 16px;
   margin-bottom: 16px;
   border-radius: 16px;
   box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
 }
-.cards-entree-francaise h3 {
+.cards-menu-francaise h3 {
   font-weight: 600;
   margin: 0px;
   padding-bottom: 4px;

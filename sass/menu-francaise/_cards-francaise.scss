@@ -11,7 +11,7 @@
     padding-top: 16px;
 }
 
-.card-generale-entrees-francaise {
+.card-generale-entree-francaise {
     background-color: #F6F6F6;
     padding-top: 40px;
     padding-left: 16px;
@@ -21,7 +21,21 @@
     }
 }
 
-.cards-entree-francaise {
+#no-margin-bottom {
+    margin-bottom: 0px;
+}
+
+.card-generale-plat-francaise {
+    background-color: #F6F6F6;
+    padding-top: 30px;
+    padding-left: 16px;
+
+    h3 {
+        font-weight: lighter;
+    }
+}
+
+.cards-menu-francaise {
     background-color: white;
     margin-right: 16px;
     margin-bottom: 16px;
