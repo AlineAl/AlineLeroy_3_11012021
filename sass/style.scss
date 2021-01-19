@@ -1,18 +1,12 @@
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
 
-// fontawesome
-
-@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
-
-// components index
-@import "index/_defaults.scss";
-@import "index/_form.scss";
-@import "index/_menu.scss";
-@import "index/_article-restaurants.scss";
-@import "index/_footer.scss";
-@import "index/_button.scss";
-
-// components menu a la françaises
-@import "menu-francaise/_main-francaise.scss";
-@import "menu-francaise/_cards-francaise.scss";
+// components 
+@import "components/_defaults.scss";
+@import "components/logo-ohmyfood.scss";
+@import "components/_form.scss";
+@import "components/_fonctionnement-liste.scss";
+@import "components/_cards.scss";
+@import "components/_footer.scss";
+@import "components/_button.scss";
+@import "components/_main-pages-menu.scss";

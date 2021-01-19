@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
-@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
 * {
   outline: 0;
   font-family: "Roboto", sans-serif;
@@ -17,17 +16,27 @@ header {
   box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2);
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header a {
+  position: absolute;
+  font-size: 20px;
+  left: 22px;
+  top: 22px;
+}
+
 .map-input-localisation {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #ededed;
   margin-top: 0.1em;
 }
 
 .center-icon-map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0px;
   font-size: 16px;
 }
@@ -60,7 +69,7 @@ input {
   margin-top: 46px;
 }
 
-.menu-1 {
+.fonctionnement-1, .fonctionnement-2, .fonctionnement-3 {
   display: flex;
   justify-content: center;
   background-color: #F7F7F7;
@@ -71,49 +80,10 @@ input {
   padding-bottom: 12px;
   position: relative;
 }
-
-.menu-1:hover {
+.fonctionnement-1:hover, .fonctionnement-2:hover, .fonctionnement-3:hover {
   background-color: #F7F1FF;
 }
-.menu-1:hover .position-icon-fontawesome {
-  color: #9356DC;
-}
-
-.menu-2 {
-  display: flex;
-  justify-content: center;
-  background-color: #F7F7F7;
-  border-radius: 24px;
-  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin: 24px 20px;
-  position: relative;
-}
-
-.menu-2:hover {
-  background-color: #F7F1FF;
-}
-.menu-2:hover .position-icon-fontawesome {
-  color: #9356DC;
-}
-
-.menu-3 {
-  display: flex;
-  justify-content: center;
-  background-color: #F7F7F7;
-  border-radius: 24px;
-  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin: 24px 20px;
-  position: relative;
-}
-
-.menu-3:hover {
-  background-color: #F7F1FF;
-}
-.menu-3:hover .position-icon-fontawesome {
+.fonctionnement-1:hover .position-icon-fontawesome, .fonctionnement-2:hover .position-icon-fontawesome, .fonctionnement-3:hover .position-icon-fontawesome {
   color: #9356DC;
 }
 
@@ -195,6 +165,64 @@ article h2 {
   font-size: 26px;
 }
 
+.font-h2-francaise {
+  font-family: "Shrikhand", "sans-serif";
+}
+
+.card-generale-main {
+  background-color: #F7F7F7;
+  position: absolute;
+  top: 271px;
+  border-radius: 46px 46px 0px 0px;
+  width: 100%;
+  padding-top: 16px;
+}
+
+.card-generale-francaise {
+  background-color: #F7F7F7;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.card-generale-francaise h3 {
+  font-weight: lighter;
+}
+
+#no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.cards-menu-francaise {
+  background-color: white;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.cards-menu-francaise h3 {
+  font-weight: 600;
+  margin: 0px;
+  padding-bottom: 4px;
+  padding-top: 12px;
+  padding-left: 8px;
+}
+
+.flex-plat-prix {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-plat-prix p {
+  margin: 0px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+}
+
+.p-prix {
+  padding-right: 22px;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -234,6 +262,18 @@ footer p {
   margin-top: 16px;
 }
 
+.display-flex-commander {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 76px;
+  background-color: #F6F6F6;
+}
+
+.button-commander {
+  padding: 16px 58px;
+}
+
 .img-francaise {
   object-fit: cover;
   width: 100%;
@@ -253,70 +293,6 @@ footer p {
 }
 .h1-main-heart h1, .h1-main-heart p {
   font-size: 28px;
-}
-
-.font-h2-francaise {
-  font-family: "Shrikhand", "sans-serif";
-}
-
-.card-generale-main {
-  background-color: #F6F6F6;
-  position: absolute;
-  top: 204px;
-  border-radius: 46px 46px 0px 0px;
-  width: 100%;
-  padding-top: 16px;
-}
-
-.card-generale-entree-francaise {
-  background-color: #F6F6F6;
-  padding-top: 40px;
-  padding-left: 16px;
-}
-.card-generale-entree-francaise h3 {
-  font-weight: lighter;
-}
-
-#no-margin-bottom {
-  margin-bottom: 0px;
-}
-
-.card-generale-plat-francaise {
-  background-color: #F6F6F6;
-  padding-top: 30px;
-  padding-left: 16px;
-}
-.card-generale-plat-francaise h3 {
-  font-weight: lighter;
-}
-
-.cards-menu-francaise {
-  background-color: white;
-  margin-right: 16px;
-  margin-bottom: 16px;
-  border-radius: 16px;
-  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
-}
-.cards-menu-francaise h3 {
-  font-weight: 600;
-  margin: 0px;
-  padding-bottom: 4px;
-  padding-top: 12px;
-  padding-left: 8px;
-}
-
-.flex-plat-prix {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-plat-prix p {
-  margin: 0px;
-  padding-bottom: 12px;
-  padding-left: 8px;
-}
-
-.p-prix {
-  padding-right: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
