@@ -178,7 +178,7 @@ article h2 {
   padding-top: 16px;
 }
 
-.card-generale-francaise {
+.card-primary {
   background-color: #F7F7F7;
   padding-top: 40px;
   display: flex;
@@ -187,21 +187,23 @@ article h2 {
   padding-left: 16px;
   padding-right: 16px;
 }
-.card-generale-francaise h3 {
+.card-primary h3 {
   font-weight: lighter;
 }
 
-#no-margin-bottom {
-  margin-bottom: 0px;
+.border-title-menu {
+  padding-bottom: 4px;
+  border-bottom: #99E2D0 solid 4px;
+  width: 46px;
 }
 
-.cards-menu-francaise {
+.cards-menu {
   background-color: white;
   margin-bottom: 16px;
   border-radius: 16px;
   box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
 }
-.cards-menu-francaise h3 {
+.cards-menu h3 {
   font-weight: 600;
   margin: 0px;
   padding-bottom: 4px;
@@ -217,10 +219,12 @@ article h2 {
   margin: 0px;
   padding-bottom: 12px;
   padding-left: 8px;
+  font-size: 15px;
 }
 
 .p-prix {
   padding-right: 22px;
+  font-weight: bold;
 }
 
 footer {
@@ -289,7 +293,9 @@ footer p {
   font-weight: lighter;
 }
 .h1-main-heart p {
-  padding-right: 38px;
+  position: absolute;
+  right: 36px;
+  top: 10px;
 }
 .h1-main-heart h1, .h1-main-heart p {
   font-size: 28px;

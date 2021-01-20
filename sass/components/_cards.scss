@@ -79,7 +79,7 @@ article {
     padding-top: 16px;
 }
 
-.card-generale-francaise {
+.card-primary {
     background-color: $background-primary;
     padding-top: 40px;
     display: flex;
@@ -93,11 +93,13 @@ article {
     }
 }
 
-#no-margin-bottom {
-    margin-bottom: 0px;
+.border-title-menu {
+    padding-bottom: 4px;
+    border-bottom: #99E2D0 solid 4px;
+    width: 46px;
 }
 
-.cards-menu-francaise {
+.cards-menu {
     background-color: white;
     margin-bottom: 16px;
     border-radius: 16px;
@@ -120,9 +122,11 @@ article {
         margin: 0px;
         padding-bottom: 12px;
         padding-left: 8px;
+        font-size: 15px;
     }
 }
 
 .p-prix {
     padding-right: 22px;
+    font-weight: bold;
 }
