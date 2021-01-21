@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./style.css",
+    "prefix": "postcss ./style.css --use autoprefixer -d ./prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlineAl/AlineLeroy_3_11012121.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/AlineAl/AlineLeroy_3_11012121/issues"
+  },
+  "homepage": "https://github.com/AlineAl/AlineLeroy_3_11012121#readme"
+}
