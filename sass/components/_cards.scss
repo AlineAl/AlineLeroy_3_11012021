@@ -1,4 +1,53 @@
+// VARIABLES
+
 $background-primary: #F7F7F7;
+
+// KEYFRAMES
+
+@keyframes progress-green-box {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes check-rotation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glissement-text {
+    0% {
+        padding-right: 22px;
+    }
+    100% {
+        padding-right: 84px;
+    }
+}
+
+@keyframes change-text {
+    0% {
+        content: "umes";
+    }
+    20% {
+        content: "ume";
+    }
+    50% {
+        content: "um";
+    }
+    70% {
+        content: "u";
+    }
+    100% {
+        content: "...";
+    }
+}
 
 // CARDS PAGE ACCUEIL 
 
@@ -104,6 +153,7 @@ article {
     margin-bottom: 16px;
     border-radius: 16px;
     box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 
     h3 {
         font-weight: 600;
@@ -111,6 +161,95 @@ article {
         padding-bottom: 4px;
         padding-top: 12px;
         padding-left: 8px;
+    }
+
+    // ANIMATION NOT ACTIVE
+
+    &:not(:active) {
+        .p-prix {
+            animation: glissement-text 0.3s linear forwards;
+            animation-play-state: paused;
+        }
+
+        .green-box {
+            opacity: 1;
+            animation: progress-green-box 0.3s linear forwards;
+            animation-play-state: paused;
+
+            i {
+                animation: check-rotation 0.3s linear forwards;
+                animation-play-state: paused;
+            }
+        }
+
+        // ANIMATION CHANGE TEXT
+
+        .change-content::before {
+            display: none;
+        }
+
+        .change-content::after {
+            content: "...";
+            animation: change-text 0.3s linear forwards;
+            animation-play-state: paused;
+        }
+    }
+
+    // ANIMATION ACTIVE
+
+    &:active {
+        .p-prix {
+            animation: glissement-text 0.3s linear forwards;
+            animation-play-state: running;
+        }
+
+        .green-box {
+            opacity: 1;
+            animation: progress-green-box 0.3s linear forwards;
+            animation-play-state: running;
+
+            i {
+                animation: check-rotation 0.3s linear forwards;
+                animation-play-state: running;
+            }
+        }
+
+        // ANIMATION CHANGE TEXT
+
+        .change-content::before {
+            display: none;
+        }
+
+        .change-content::after {
+            content: "...";
+            animation: change-text 0.3s linear forwards;
+            animation-play-state: running;
+        }
+    }
+}
+
+.change-content::before {
+    content: "umes";
+}
+
+.green-box {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #99E2D0;
+    width: 70px;
+    height: 100%;
+    border-radius: 0px 16px 16px 0px;
+    opacity: 0;
+    transform-origin: right;
+
+    i {
+        display: flex;
+        position: relative;
+        top: 22px;
+        font-size: 24px;
+        justify-content: center;
+        color: white;
     }
 }
 

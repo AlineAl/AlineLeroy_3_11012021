@@ -105,6 +105,47 @@ input {
   font-size: 22px;
 }
 
+@keyframes progress-green-box {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check-rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glissement-text {
+  0% {
+    padding-right: 22px;
+  }
+  100% {
+    padding-right: 84px;
+  }
+}
+@keyframes change-text {
+  0% {
+    content: "umes";
+  }
+  20% {
+    content: "ume";
+  }
+  50% {
+    content: "um";
+  }
+  70% {
+    content: "u";
+  }
+  100% {
+    content: "...";
+  }
+}
 article {
   background-color: #F7F7F7;
   padding-bottom: 50px;
@@ -202,6 +243,7 @@ article h2 {
   margin-bottom: 16px;
   border-radius: 16px;
   box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .cards-menu h3 {
   font-weight: 600;
@@ -209,6 +251,72 @@ article h2 {
   padding-bottom: 4px;
   padding-top: 12px;
   padding-left: 8px;
+}
+.cards-menu:not(:active) .p-prix {
+  animation: glissement-text 0.3s linear forwards;
+  animation-play-state: paused;
+}
+.cards-menu:not(:active) .green-box {
+  opacity: 1;
+  animation: progress-green-box 0.3s linear forwards;
+  animation-play-state: paused;
+}
+.cards-menu:not(:active) .green-box i {
+  animation: check-rotation 0.3s linear forwards;
+  animation-play-state: paused;
+}
+.cards-menu:not(:active) .change-content::before {
+  display: none;
+}
+.cards-menu:not(:active) .change-content::after {
+  content: "...";
+  animation: change-text 0.3s linear forwards;
+  animation-play-state: paused;
+}
+.cards-menu:active .p-prix {
+  animation: glissement-text 0.3s linear forwards;
+  animation-play-state: running;
+}
+.cards-menu:active .green-box {
+  opacity: 1;
+  animation: progress-green-box 0.3s linear forwards;
+  animation-play-state: running;
+}
+.cards-menu:active .green-box i {
+  animation: check-rotation 0.3s linear forwards;
+  animation-play-state: running;
+}
+.cards-menu:active .change-content::before {
+  display: none;
+}
+.cards-menu:active .change-content::after {
+  content: "...";
+  animation: change-text 0.3s linear forwards;
+  animation-play-state: running;
+}
+
+.change-content::before {
+  content: "umes";
+}
+
+.green-box {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 100%;
+  border-radius: 0px 16px 16px 0px;
+  opacity: 0;
+  transform-origin: right;
+}
+.green-box i {
+  display: flex;
+  position: relative;
+  top: 22px;
+  font-size: 24px;
+  justify-content: center;
+  color: white;
 }
 
 .flex-plat-prix {
