@@ -101,6 +101,64 @@
     100% { content: "..."; }
 }
 
+// MENU ENCHANTE
+
+@keyframes change-text-truffe-enchante {
+    0% { content: "e à la truffe"; }
+    20% { content: "e à la tr"; }
+    50% { content: "e à l"; }
+    70% { content: "e"; }
+    100% { content: "..."; }
+}
+
+@keyframes change-text-jacques {
+    0% { content: "acques"; }
+    20% { content: "acqu"; }
+    50% { content: "acq"; }
+    70% { content: "ac"; }
+    100% { content: "..."; }
+}
+
+@keyframes change-text-citron  {
+    0% { content: "citron"; }
+    20% { content: "citr"; }
+    50% { content: "cit"; }
+    70% { content: "c"; }
+    100% { content: "..."; }
+}
+
+@keyframes change-text-guerande {
+    0% { content: "de Guéran"; }
+    20% { content: "de Guéra"; }
+    50% { content: "de Gu"; }
+    70% { content: "de"; }
+    100% { content: "..."; }
+}
+
+@keyframes change-text-puree-panais {
+    0% { content: "de panais"; }
+    20% { content: "de pan"; }
+    50% { content: "de pa"; }
+    70% { content: "de"; }
+    100% { content: "..."; }
+}
+
+@keyframes change-text-terre {
+    0% { content: "de terre"; }
+    20% { content: "de ter"; }
+    50% { content: "de t"; }
+    70% { content: "d"; }
+    100% { content: "..."; }
+}
+
+@keyframes change-text-gnocchis {
+    0% { content: "aux légumes"; }
+    20% { content: "aux légu"; }
+    50% { content: "aux l"; }
+    70% { content: "au"; }
+    100% { content: "..."; }
+}
+
 .cards-menu {
     &:hover {
         .p-prix {
@@ -201,6 +259,73 @@
             content: "...";
             animation: change-text-truffe 0.3s linear forwards;
         }
+
+        // MENU ENCHANTE
+
+        .change-content-truffe-enchante::before {
+            display: none;
+        }
+
+        .change-content-truffe-enchante::after {
+            content: "...";
+            animation: change-text-truffe-enchante 0.3s linear forwards;
+        }
+
+        .change-content-jacques::before {
+            display: none;
+        }
+
+        .change-content-jacques::after{
+            content: "...";
+            animation: change-text-jacques 0.3s linear forwards;
+        }
+
+        .change-content-citron::before {
+            display: none;
+        }
+
+        .change-content-citron::after {
+            content: "...";
+            animation: change-text-citron 0.3s linear forwards;
+        }
+
+        .change-content-guerande::before {
+            display: none;
+        }
+
+        .change-content-guerande::after {
+            content: "...";
+            animation: change-text-guerande 0.3s linear forwards;
+        }
+
+        // MENU FRANCAISE
+
+        .change-content-puree-panais::before {
+            display: none;
+        }
+
+        .change-content-puree-panais::after {
+            content: "...";
+            animation: change-text-puree-panais 0.3s linear forwards;
+        }
+
+        .change-content-terre::before {
+            display: none;
+        }
+
+        .change-content-terre::after {
+            content: "...";
+            animation: change-text-terre 0.3s linear forwards;
+        }
+
+        .change-content-gnocchis::before {
+            display: none;
+        }
+
+        .change-content-gnocchis::after {
+            content: "...";
+            animation: change-text-gnocchis 0.3s linear forwards;
+        }
     }
 }
 
@@ -242,4 +367,36 @@
 
 .change-content-truffe::before {
     content: "uffe noire";
+}
+
+// MENU ENCHANTE
+
+.change-content-truffe-enchante::before {
+    content: "e à la truffe";
+}
+
+.change-content-jacques::before {
+    content: "acques";
+}
+
+.change-content-citron::before {
+    content: "citron";
+}
+
+.change-content-guerande::before {
+    content: "de Guérande";
+}
+
+// MENU FRANCAISE 
+
+.change-content-puree-panais::before {
+    content: "de panais";
+}
+
+.change-content-terre::before {
+    content: "de terre";
+}
+
+.change-content-gnocchis::before {
+    content: "aux légumes";
 }
