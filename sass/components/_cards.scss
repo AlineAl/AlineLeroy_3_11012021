@@ -31,6 +31,8 @@ $background-primary: #F7F7F7;
     }
 }
 
+// MENU DELICE
+
 @keyframes change-text {
     0% {
         content: "umes";
@@ -43,6 +45,42 @@ $background-primary: #F7F7F7;
     }
     70% {
         content: "u";
+    }
+    100% {
+        content: "...";
+    }
+}
+
+@keyframes change-text-croustillant {
+    0% {
+        content: "illant";
+    }
+    20% {
+        content: "illan";
+    }
+    50% {
+        content: "illa";
+    }
+    70% {
+        content: "l";
+    }
+    100% {
+        content: "...";
+    }
+}
+
+@keyframes change-text-provence {
+    0% {
+        content: "vence";
+    }
+    20% {
+        content: "venc";
+    }
+    50% {
+        content: "ven";
+    }
+    70% {
+        content: "ve";
     }
     100% {
         content: "...";
@@ -163,26 +201,24 @@ article {
         padding-left: 8px;
     }
 
-    // ANIMATION NOT ACTIVE
-
     &:not(:active) {
         .p-prix {
-            animation: glissement-text 0.3s linear forwards;
+            animation: glissement-text 0.2s linear forwards;
             animation-play-state: paused;
         }
 
         .green-box {
             opacity: 1;
-            animation: progress-green-box 0.3s linear forwards;
+            animation: progress-green-box 0.2s linear forwards;
             animation-play-state: paused;
 
             i {
-                animation: check-rotation 0.3s linear forwards;
+                animation: check-rotation 0.2s linear forwards;
                 animation-play-state: paused;
             }
         }
 
-        // ANIMATION CHANGE TEXT
+        //MENU DELICE
 
         .change-content::before {
             display: none;
@@ -190,31 +226,49 @@ article {
 
         .change-content::after {
             content: "...";
-            animation: change-text 0.3s linear forwards;
+            animation: change-text 0.2s linear forwards;
+            animation-play-state: paused;
+        }
+
+        .change-content-croustillant::before {
+            display: none;
+        }
+
+        .change-content-croustillant::after {
+            content: "...";
+            animation: change-text-croustillant 0.2s linear forwards;
+            animation-play-state: paused;
+        }
+
+        .change-content-provence::before {
+            display: none;
+        }
+
+        .change-content-provence::after {
+            content: "...";
+            animation: change-text-provence 0.2s linear forwards;
             animation-play-state: paused;
         }
     }
 
-    // ANIMATION ACTIVE
-
     &:active {
         .p-prix {
-            animation: glissement-text 0.3s linear forwards;
+            animation: glissement-text 0.2s linear forwards;
             animation-play-state: running;
         }
 
         .green-box {
             opacity: 1;
-            animation: progress-green-box 0.3s linear forwards;
+            animation: progress-green-box 0.2s linear forwards;
             animation-play-state: running;
 
             i {
-                animation: check-rotation 0.3s linear forwards;
+                animation: check-rotation 0.2s linear forwards;
                 animation-play-state: running;
             }
         }
 
-        // ANIMATION CHANGE TEXT
+        // MENU DELICE 
 
         .change-content::before {
             display: none;
@@ -222,14 +276,44 @@ article {
 
         .change-content::after {
             content: "...";
-            animation: change-text 0.3s linear forwards;
+            animation: change-text 0.2s linear forwards;
+            animation-play-state: running;
+        }
+
+        .change-content-croustillant::before {
+            display: none;
+        }
+
+        .change-content-croustillant::after {
+            content: "...";
+            animation: change-text-croustillant 0.2s linear forwards;
+            animation-play-state: running;
+        }
+
+        .change-content-provence::before {
+            display: none;
+        }
+
+        .change-content-provence::after {
+            content: "...";
+            animation: change-text-provence 0.2s linear forwards;
             animation-play-state: running;
         }
     }
 }
 
+// MENU DELICE
+
 .change-content::before {
     content: "umes";
+}
+
+.change-content-croustillant::before {
+    content: "illant";
+}
+
+.change-content-provence::before {
+    content: "vence";
 }
 
 .green-box {

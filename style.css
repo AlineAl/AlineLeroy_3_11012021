@@ -146,6 +146,40 @@ input {
     content: "...";
   }
 }
+@keyframes change-text-croustillant {
+  0% {
+    content: "illant";
+  }
+  20% {
+    content: "illan";
+  }
+  50% {
+    content: "illa";
+  }
+  70% {
+    content: "l";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-provence {
+  0% {
+    content: "vence";
+  }
+  20% {
+    content: "venc";
+  }
+  50% {
+    content: "ven";
+  }
+  70% {
+    content: "ve";
+  }
+  100% {
+    content: "...";
+  }
+}
 article {
   background-color: #F7F7F7;
   padding-bottom: 50px;
@@ -253,16 +287,16 @@ article h2 {
   padding-left: 8px;
 }
 .cards-menu:not(:active) .p-prix {
-  animation: glissement-text 0.3s linear forwards;
+  animation: glissement-text 0.2s linear forwards;
   animation-play-state: paused;
 }
 .cards-menu:not(:active) .green-box {
   opacity: 1;
-  animation: progress-green-box 0.3s linear forwards;
+  animation: progress-green-box 0.2s linear forwards;
   animation-play-state: paused;
 }
 .cards-menu:not(:active) .green-box i {
-  animation: check-rotation 0.3s linear forwards;
+  animation: check-rotation 0.2s linear forwards;
   animation-play-state: paused;
 }
 .cards-menu:not(:active) .change-content::before {
@@ -270,20 +304,36 @@ article h2 {
 }
 .cards-menu:not(:active) .change-content::after {
   content: "...";
-  animation: change-text 0.3s linear forwards;
+  animation: change-text 0.2s linear forwards;
+  animation-play-state: paused;
+}
+.cards-menu:not(:active) .change-content-croustillant::before {
+  display: none;
+}
+.cards-menu:not(:active) .change-content-croustillant::after {
+  content: "...";
+  animation: change-text-croustillant 0.2s linear forwards;
+  animation-play-state: paused;
+}
+.cards-menu:not(:active) .change-content-provence::before {
+  display: none;
+}
+.cards-menu:not(:active) .change-content-provence::after {
+  content: "...";
+  animation: change-text-provence 0.2s linear forwards;
   animation-play-state: paused;
 }
 .cards-menu:active .p-prix {
-  animation: glissement-text 0.3s linear forwards;
+  animation: glissement-text 0.2s linear forwards;
   animation-play-state: running;
 }
 .cards-menu:active .green-box {
   opacity: 1;
-  animation: progress-green-box 0.3s linear forwards;
+  animation: progress-green-box 0.2s linear forwards;
   animation-play-state: running;
 }
 .cards-menu:active .green-box i {
-  animation: check-rotation 0.3s linear forwards;
+  animation: check-rotation 0.2s linear forwards;
   animation-play-state: running;
 }
 .cards-menu:active .change-content::before {
@@ -291,12 +341,36 @@ article h2 {
 }
 .cards-menu:active .change-content::after {
   content: "...";
-  animation: change-text 0.3s linear forwards;
+  animation: change-text 0.2s linear forwards;
+  animation-play-state: running;
+}
+.cards-menu:active .change-content-croustillant::before {
+  display: none;
+}
+.cards-menu:active .change-content-croustillant::after {
+  content: "...";
+  animation: change-text-croustillant 0.2s linear forwards;
+  animation-play-state: running;
+}
+.cards-menu:active .change-content-provence::before {
+  display: none;
+}
+.cards-menu:active .change-content-provence::after {
+  content: "...";
+  animation: change-text-provence 0.2s linear forwards;
   animation-play-state: running;
 }
 
 .change-content::before {
   content: "umes";
+}
+
+.change-content-croustillant::before {
+  content: "illant";
+}
+
+.change-content-provence::before {
+  content: "vence";
 }
 
 .green-box {
