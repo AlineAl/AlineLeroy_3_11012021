@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 * {
   outline: 0;
@@ -105,81 +106,6 @@ input {
   font-size: 22px;
 }
 
-@keyframes progress-green-box {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes check-rotation {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes glissement-text {
-  0% {
-    padding-right: 22px;
-  }
-  100% {
-    padding-right: 84px;
-  }
-}
-@keyframes change-text {
-  0% {
-    content: "umes";
-  }
-  20% {
-    content: "ume";
-  }
-  50% {
-    content: "um";
-  }
-  70% {
-    content: "u";
-  }
-  100% {
-    content: "...";
-  }
-}
-@keyframes change-text-croustillant {
-  0% {
-    content: "illant";
-  }
-  20% {
-    content: "illan";
-  }
-  50% {
-    content: "illa";
-  }
-  70% {
-    content: "l";
-  }
-  100% {
-    content: "...";
-  }
-}
-@keyframes change-text-provence {
-  0% {
-    content: "vence";
-  }
-  20% {
-    content: "venc";
-  }
-  50% {
-    content: "ven";
-  }
-  70% {
-    content: "ve";
-  }
-  100% {
-    content: "...";
-  }
-}
 article {
   background-color: #F7F7F7;
   padding-bottom: 50px;
@@ -285,92 +211,6 @@ article h2 {
   padding-bottom: 4px;
   padding-top: 12px;
   padding-left: 8px;
-}
-.cards-menu:not(:active) .p-prix {
-  animation: glissement-text 0.2s linear forwards;
-  animation-play-state: paused;
-}
-.cards-menu:not(:active) .green-box {
-  opacity: 1;
-  animation: progress-green-box 0.2s linear forwards;
-  animation-play-state: paused;
-}
-.cards-menu:not(:active) .green-box i {
-  animation: check-rotation 0.2s linear forwards;
-  animation-play-state: paused;
-}
-.cards-menu:not(:active) .change-content::before {
-  display: none;
-}
-.cards-menu:not(:active) .change-content::after {
-  content: "...";
-  animation: change-text 0.2s linear forwards;
-  animation-play-state: paused;
-}
-.cards-menu:not(:active) .change-content-croustillant::before {
-  display: none;
-}
-.cards-menu:not(:active) .change-content-croustillant::after {
-  content: "...";
-  animation: change-text-croustillant 0.2s linear forwards;
-  animation-play-state: paused;
-}
-.cards-menu:not(:active) .change-content-provence::before {
-  display: none;
-}
-.cards-menu:not(:active) .change-content-provence::after {
-  content: "...";
-  animation: change-text-provence 0.2s linear forwards;
-  animation-play-state: paused;
-}
-.cards-menu:active .p-prix {
-  animation: glissement-text 0.2s linear forwards;
-  animation-play-state: running;
-}
-.cards-menu:active .green-box {
-  opacity: 1;
-  animation: progress-green-box 0.2s linear forwards;
-  animation-play-state: running;
-}
-.cards-menu:active .green-box i {
-  animation: check-rotation 0.2s linear forwards;
-  animation-play-state: running;
-}
-.cards-menu:active .change-content::before {
-  display: none;
-}
-.cards-menu:active .change-content::after {
-  content: "...";
-  animation: change-text 0.2s linear forwards;
-  animation-play-state: running;
-}
-.cards-menu:active .change-content-croustillant::before {
-  display: none;
-}
-.cards-menu:active .change-content-croustillant::after {
-  content: "...";
-  animation: change-text-croustillant 0.2s linear forwards;
-  animation-play-state: running;
-}
-.cards-menu:active .change-content-provence::before {
-  display: none;
-}
-.cards-menu:active .change-content-provence::after {
-  content: "...";
-  animation: change-text-provence 0.2s linear forwards;
-  animation-play-state: running;
-}
-
-.change-content::before {
-  content: "umes";
-}
-
-.change-content-croustillant::before {
-  content: "illant";
-}
-
-.change-content-provence::before {
-  content: "vence";
 }
 
 .green-box {
@@ -485,6 +325,294 @@ footer p {
 }
 .h1-main-heart h1, .h1-main-heart p {
   font-size: 28px;
+}
+
+@keyframes progress-green-box {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check-rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glissement-text {
+  0% {
+    padding-right: 22px;
+  }
+  100% {
+    padding-right: 84px;
+  }
+}
+@keyframes change-text {
+  0% {
+    content: "umes";
+  }
+  20% {
+    content: "ume";
+  }
+  50% {
+    content: "um";
+  }
+  70% {
+    content: "u";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-croustillant {
+  0% {
+    content: "illant";
+  }
+  20% {
+    content: "illan";
+  }
+  50% {
+    content: "illa";
+  }
+  70% {
+    content: "l";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-provence {
+  0% {
+    content: "vence";
+  }
+  20% {
+    content: "venc";
+  }
+  50% {
+    content: "ven";
+  }
+  70% {
+    content: "ve";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-caviar {
+  0% {
+    content: "it de caviar";
+  }
+  20% {
+    content: "it de cav";
+  }
+  50% {
+    content: "it de";
+  }
+  70% {
+    content: "it";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-ribambelle {
+  0% {
+    content: "belle de légu...";
+  }
+  20% {
+    content: "belle de";
+  }
+  50% {
+    content: "belle";
+  }
+  70% {
+    content: "be";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-panais {
+  0% {
+    content: "e de panais";
+  }
+  20% {
+    content: "e de pa";
+  }
+  50% {
+    content: "e de";
+  }
+  70% {
+    content: "e";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-exception {
+  0% {
+    content: "xception";
+  }
+  20% {
+    content: "xcept";
+  }
+  50% {
+    content: "xce";
+  }
+  70% {
+    content: "x";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-madagascar {
+  0% {
+    content: "adagascar";
+  }
+  20% {
+    content: "adaga";
+  }
+  50% {
+    content: "ada";
+  }
+  70% {
+    content: "a";
+  }
+  100% {
+    content: "...";
+  }
+}
+@keyframes change-text-truffe {
+  0% {
+    content: "uffe noire";
+  }
+  20% {
+    content: "uffe n";
+  }
+  50% {
+    content: "uff";
+  }
+  70% {
+    content: "u";
+  }
+  100% {
+    content: "...";
+  }
+}
+.cards-menu:hover .p-prix {
+  animation: glissement-text 0.3s linear forwards;
+  animation-play-state: running;
+}
+.cards-menu:hover .green-box {
+  opacity: 1;
+  animation: progress-green-box 0.3s linear forwards;
+}
+.cards-menu:hover .green-box i {
+  animation: check-rotation 0.3s linear forwards;
+}
+.cards-menu:hover .change-content::before {
+  display: none;
+}
+.cards-menu:hover .change-content::after {
+  content: "...";
+  animation: change-text 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-croustillant::before {
+  display: none;
+}
+.cards-menu:hover .change-content-croustillant::after {
+  content: "...";
+  animation: change-text-croustillant 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-provence::before {
+  display: none;
+}
+.cards-menu:hover .change-content-provence::after {
+  content: "...";
+  animation: change-text-provence 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-caviar::before {
+  display: none;
+}
+.cards-menu:hover .change-content-caviar::after {
+  content: "...";
+  animation: change-text-caviar 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-ribambelle::before {
+  display: none;
+}
+.cards-menu:hover .change-content-ribambelle::after {
+  content: "...";
+  animation: change-text-ribambelle 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-panais::before {
+  display: none;
+}
+.cards-menu:hover .change-content-panais::after {
+  content: "...";
+  animation: change-text-panais 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-exception::before {
+  display: none;
+}
+.cards-menu:hover .change-content-exception::after {
+  content: "...";
+  animation: change-text-exception 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-madagascar::before {
+  display: none;
+}
+.cards-menu:hover .change-content-madagascar::after {
+  content: "...";
+  animation: change-text-madagascar 0.3s linear forwards;
+}
+.cards-menu:hover .change-content-truffe::before {
+  display: none;
+}
+.cards-menu:hover .change-content-truffe::after {
+  content: "...";
+  animation: change-text-truffe 0.3s linear forwards;
+}
+
+.change-content::before {
+  content: "umes";
+}
+
+.change-content-croustillant::before {
+  content: "illant";
+}
+
+.change-content-provence::before {
+  content: "vence";
+}
+
+.change-content-caviar::before {
+  content: "it de caviar";
+}
+
+.change-content-ribambelle::before {
+  content: "belle de légu...";
+}
+
+.change-content-panais::before {
+  content: "e de panais";
+}
+
+.change-content-exception::before {
+  content: "xception";
+}
+
+.change-content-madagascar::before {
+  content: "adagascar";
+}
+
+.change-content-truffe::before {
+  content: "uffe noire";
 }
 
 /*# sourceMappingURL=style.css.map */
