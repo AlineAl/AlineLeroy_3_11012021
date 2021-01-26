@@ -880,4 +880,42 @@ footer p {
   animation-delay: 3.6s;
 }
 
+@keyframes animation-heart {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+.icon-heart-animation {
+  position: absolute;
+  right: 26px;
+  bottom: -2px;
+  font-size: 26px;
+  opacity: 0;
+}
+.icon-heart-animation:hover {
+  animation: animation-heart 0.3s ease-in-out forwards;
+  opacity: 1;
+  color: #FF79DA;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-heart-animation-menus {
+  opacity: 0;
+}
+.icon-heart-animation-menus:hover {
+  animation: animation-heart 0.3s ease-in-out forwards;
+  opacity: 1;
+  color: #FF79DA;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */
