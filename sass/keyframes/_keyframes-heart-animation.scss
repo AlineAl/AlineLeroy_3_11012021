@@ -8,7 +8,7 @@ $purple: #9356DC;
         animation: animation-heart 0.3s ease-in-out forwards;
         opacity: 1;
         color: $pink;
-        background: linear-gradient($pink, $purple);
+        background: -webkit-linear-gradient($pink, $purple);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -30,8 +30,7 @@ $purple: #9356DC;
     right: 26px;
     bottom: -2px;
     font-size: 26px;
-    @include animation-heart-hover();
-    
+    @include animation-heart-hover(); 
 }
 
 .icon-heart-animation-menus {

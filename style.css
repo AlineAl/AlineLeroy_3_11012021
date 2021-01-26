@@ -901,7 +901,7 @@ footer p {
   animation: animation-heart 0.3s ease-in-out forwards;
   opacity: 1;
   color: #FF79DA;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -913,7 +913,7 @@ footer p {
   animation: animation-heart 0.3s ease-in-out forwards;
   opacity: 1;
   color: #FF79DA;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
