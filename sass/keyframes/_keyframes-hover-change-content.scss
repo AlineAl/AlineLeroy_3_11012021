@@ -25,139 +25,19 @@
     }
 }
 
-
-// MENU DELICE
-
-@keyframes change-text {
-    0% { content: "umes"; }
-    20% { content: "ume"; }
-    50% { content: "um"; }
-    70% { content: "u"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-croustillant {
-    0% { content: "illant"; }
-    20% { content: "illan"; }
-    50% { content: "illa"; }
-    70% { content: "l"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-provence {
-    0% { content: "vence"; }
-    20% { content: "venc"; }
-    50% { content: "ven"; }
-    70% { content: "ve"; }
-    100% { content: "..."; }
-}
-
-// MENU PALETTE 
-
-@keyframes change-text-caviar {
-    0% { content: "it de caviar"; }
-    20% { content: "it de cav"; }
-    50% { content: "it de"; }
-    70% { content: "it"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-ribambelle {
-    0% { content: "belle de légu..."; }
-    20% { content: "belle de"; }
-    50% { content: "belle"; }
-    70% { content: "be"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-panais {
-    0% { content: "e de panais"; }
-    20% { content: "e de pa"; }
-    50% { content: "e de"; }
-    70% { content: "e"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-exception {
-    0% { content: "xception"; }
-    20% { content: "xcept"; }
-    50% { content: "xce"; }
-    70% { content: "x"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-madagascar {
-    0% { content: "adagascar"; }
-    20% { content: "adaga"; }
-    50% { content: "ada"; }
-    70% { content: "a"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-truffe {
-    0% { content: "uffe noire"; }
-    20% { content: "uffe n"; }
-    50% { content: "uff"; }
-    70% { content: "u"; }
-    100% { content: "..."; }
-}
-
-// MENU ENCHANTE
-
-@keyframes change-text-truffe-enchante {
-    0% { content: "e à la truffe"; }
-    20% { content: "e à la tr"; }
-    50% { content: "e à l"; }
-    70% { content: "e"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-jacques {
-    0% { content: "acques"; }
-    20% { content: "acqu"; }
-    50% { content: "acq"; }
-    70% { content: "ac"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-citron  {
-    0% { content: "citron"; }
-    20% { content: "citr"; }
-    50% { content: "cit"; }
-    70% { content: "c"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-guerande {
-    0% { content: "de Guéran"; }
-    20% { content: "de Guéra"; }
-    50% { content: "de Gu"; }
-    70% { content: "de"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-puree-panais {
-    0% { content: "de panais"; }
-    20% { content: "de pan"; }
-    50% { content: "de pa"; }
-    70% { content: "de"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-terre {
-    0% { content: "de terre"; }
-    20% { content: "de ter"; }
-    50% { content: "de t"; }
-    70% { content: "d"; }
-    100% { content: "..."; }
-}
-
-@keyframes change-text-gnocchis {
-    0% { content: "aux légumes"; }
-    20% { content: "aux légu"; }
-    50% { content: "aux l"; }
-    70% { content: "au"; }
-    100% { content: "..."; }
+@keyframes glissement-ellipsis {
+    0% {
+        width: 300px;
+    }
+    40% {
+        width: 260px;
+    }
+    80% {
+        width: 230px;
+    }
+    100% {
+        width: 200px;
+    }
 }
 
 .cards-menu {
@@ -169,235 +49,22 @@
 
         .green-box {
             opacity: 1;
-            animation: progress-green-box 0.3s linear forwards;
+            animation: progress-green-box 0.4s linear forwards;
 
             i {
-                animation: check-rotation 0.3s linear forwards;
+                animation: check-rotation 0.4s linear forwards;
             }
         }
 
-        // MENU DELICE 
-
-        .change-content::before {
-            display: none;
-        }
-
-        .change-content::after {
-            content: "...";
-            animation: change-text 0.3s linear forwards;
-        }
-
-        .change-content-croustillant::before {
-            display: none;
-        }
-
-        .change-content-croustillant::after {
-            content: "...";
-            animation: change-text-croustillant 0.3s linear forwards;
-        }
-
-        .change-content-provence::before {
-            display: none;
-        }
-
-        .change-content-provence::after {
-            content: "...";
-            animation: change-text-provence 0.3s linear forwards;
-        }
-
-        // MENU PALETTE
-
-        .change-content-caviar::before {
-            display: none;
-        }
-
-        .change-content-caviar::after {
-            content: "...";
-            animation: change-text-caviar 0.3s linear forwards;
-        }
-
-        .change-content-ribambelle::before {
-            display: none;
-        }
-
-        .change-content-ribambelle::after {
-            content: "...";
-            animation: change-text-ribambelle 0.3s linear forwards;
-        }
-
-        .change-content-panais::before {
-            display: none;
-        }
-
-        .change-content-panais::after {
-            content: "...";
-            animation: change-text-panais 0.3s linear forwards;
-        }
-
-        .change-content-exception::before {
-            display: none;
-        }
-
-        .change-content-exception::after {
-            content: "...";
-            animation: change-text-exception 0.3s linear forwards;
-        }
-
-        .change-content-madagascar::before {
-            display: none;
-        }
-
-        .change-content-madagascar::after {
-            content: "...";
-            animation: change-text-madagascar 0.3s linear forwards;
-        }
-
-        .change-content-truffe::before {
-            display: none;
-        }
-
-        .change-content-truffe::after {
-            content: "...";
-            animation: change-text-truffe 0.3s linear forwards;
-        }
-
-        // MENU ENCHANTE
-
-        .change-content-truffe-enchante::before {
-            display: none;
-        }
-
-        .change-content-truffe-enchante::after {
-            content: "...";
-            animation: change-text-truffe-enchante 0.3s linear forwards;
-        }
-
-        .change-content-jacques::before {
-            display: none;
-        }
-
-        .change-content-jacques::after{
-            content: "...";
-            animation: change-text-jacques 0.3s linear forwards;
-        }
-
-        .change-content-citron::before {
-            display: none;
-        }
-
-        .change-content-citron::after {
-            content: "...";
-            animation: change-text-citron 0.3s linear forwards;
-        }
-
-        .change-content-guerande::before {
-            display: none;
-        }
-
-        .change-content-guerande::after {
-            content: "...";
-            animation: change-text-guerande 0.3s linear forwards;
-        }
-
-        // MENU FRANCAISE
-
-        .change-content-puree-panais::before {
-            display: none;
-        }
-
-        .change-content-puree-panais::after {
-            content: "...";
-            animation: change-text-puree-panais 0.3s linear forwards;
-        }
-
-        .change-content-terre::before {
-            display: none;
-        }
-
-        .change-content-terre::after {
-            content: "...";
-            animation: change-text-terre 0.3s linear forwards;
-        }
-
-        .change-content-gnocchis::before {
-            display: none;
-        }
-
-        .change-content-gnocchis::after {
-            content: "...";
-            animation: change-text-gnocchis 0.3s linear forwards;
+        .text-ellipsis {
+            animation: glissement-ellipsis 0.4s linear forwards;
         }
     }
 }
 
-// MENU DELICE
-
-.change-content::before {
-    content: "umes";
-}
-
-.change-content-croustillant::before {
-    content: "illant";
-}
-
-.change-content-provence::before {
-    content: "vence";
-}
-
-// MENU PALETTE
-
-.change-content-caviar::before {
-    content: "it de caviar";
-}
-
-.change-content-ribambelle::before {
-    content: "belle de légu...";
-}
-
-.change-content-panais::before {
-    content: "e de panais";
-}
-
-.change-content-exception::before {
-    content: "xception";
-}
-
-.change-content-madagascar::before {
-    content: "adagascar";
-}
-
-.change-content-truffe::before {
-    content: "uffe noire";
-}
-
-// MENU ENCHANTE
-
-.change-content-truffe-enchante::before {
-    content: "e à la truffe";
-}
-
-.change-content-jacques::before {
-    content: "acques";
-}
-
-.change-content-citron::before {
-    content: "citron";
-}
-
-.change-content-guerande::before {
-    content: "de Guérande";
-}
-
-// MENU FRANCAISE 
-
-.change-content-puree-panais::before {
-    content: "de panais";
-}
-
-.change-content-terre::before {
-    content: "de terre";
-}
-
-.change-content-gnocchis::before {
-    content: "aux légumes";
+.text-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 300px;
 }
