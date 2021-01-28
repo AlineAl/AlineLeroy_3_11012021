@@ -497,24 +497,6 @@ footer p {
   -webkit-text-fill-color: transparent;
 }
 
-.loader-spinner::before {
-  content: "";
-  overflow: hidden;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  border-radius: 50%;
-  border: white solid 5px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  animation: rotate-spinner 3s linear infinite;
-}
-
 @keyframes rotate-spinner {
   0% {
     transform: rotate(0deg);
@@ -530,6 +512,39 @@ footer p {
     transform: rotate(360deg);
     border-left: red solid 5px;
   }
+}
+@keyframes visibility-hid {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+body {
+  animation: visibility-hid 3s linear;
+}
+
+.loader-spinner::before {
+  content: "";
+  overflow: hidden;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: transparent solid 5px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: rotate-spinner 3s linear backwards;
+}
+
+#visible {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
