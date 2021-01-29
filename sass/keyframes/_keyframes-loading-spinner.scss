@@ -1,17 +1,26 @@
-@keyframes rotate-spinner {
+$pink: #FF79DA;
+$purple: #9356DC;
+
+@keyframes circle-ohmyfood-scale {
     0% {
-        transform: rotate(0deg);
-        border-top: red solid 5px;
-    }
-    25% {
-        border-right: red solid 5px;
+        transform: scale(0);
+        color: $purple;
     }
     50% {
-        border-bottom: red solid 5px;
+        transform: scale(2.5);
+        color: $pink;
+    }
+    75% {
+        transform: scale(2.5);
+        color: $purple;
+    }
+    80% {
+        opacity: 1;
+        color: $pink;
     }
     100% {
-        transform: rotate(360deg);
-        border-left: red solid 5px;
+        opacity: 0;
+        color: $purple;
     }
 }
 
@@ -25,27 +34,62 @@
 }
 
 body {
-    animation: visibility-hid 3s linear;
+    animation: visibility-hid 4.5s linear;
 }
 
-.loader-spinner::before {
-    content: "";
-    overflow: hidden;
-    position: absolute;
+#visible {
+    visibility: visible;
+}
+
+.loader-ohmyfood {
     width: 100px;
     height: 100px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: transparent solid 5px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    animation: rotate-spinner 3s linear backwards;
 }
 
-#visible {
-    visibility: visible;
+.letter-ohmyfood {
+    font-family: "Shrikhand", "Helvetica", "sans-serif";
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 100%;
+    animation: circle-ohmyfood-scale 2s ease-in-out both;
+    animation-iteration-count: 2;
+
+    &-1 {
+        animation-delay: 0.1s;
+    }
+
+    &-2 {
+        animation-delay: 0.3s;
+    }
+    &-3 {
+        animation-delay: 0.4s;
+        margin-left: 8px;
+    }
+    &-4 {
+        animation-delay: 0.5s;
+        margin-left: 8px;
+    }
+    &-5 {
+        animation-delay: 0.6s;
+    }
+    &-6 {
+        animation-delay: 0.7s;
+    }
+    &-7 {
+        animation-delay: 0.8s;
+    }
+    &-8 {
+        animation-delay: 0.9s;
+    }
 }
