@@ -154,3 +154,33 @@ article {
     padding-right: 22px;
     font-weight: bold;
 }
+
+// RESPONSIVE
+
+// TABLETTE
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .cards-restaurant-responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// DESKTOP 
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    .cards-restaurant-responsive {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+
+    .cards-restaurant-responsive {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

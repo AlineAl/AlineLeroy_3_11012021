@@ -8,17 +8,17 @@ body {
   margin: 0px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 header {
   display: flex;
   justify-content: center;
   padding-top: 16px;
   padding-bottom: 16px;
   box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2);
-}
-
-a {
-  color: black;
-  text-decoration: none;
 }
 
 header a {
@@ -28,6 +28,22 @@ header a {
   top: 22px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  header {
+    justify-content: left;
+  }
+  header svg {
+    margin-left: 16px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  header {
+    justify-content: left;
+  }
+  header svg {
+    margin-left: 16px;
+  }
+}
 .map-input-localisation {
   display: flex;
   justify-content: center;
@@ -64,6 +80,112 @@ input {
   font-weight: lighter;
 }
 
+.responsive-form-titres {
+  display: none;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  form {
+    display: flex;
+    height: 20px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .responsive-form-titres {
+    display: block;
+    margin-left: 16px;
+  }
+
+  .responsive-titres {
+    display: none;
+  }
+
+  .map-input-localisation {
+    height: 52px;
+    width: 300px;
+    margin-left: 16px;
+    justify-content: left;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .map-input-localisation i {
+    background: linear-gradient(#9356DC, #FF79DA);
+    color: white;
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 16px 0px 0px 16px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  form {
+    display: flex;
+    height: 20px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .responsive-form-titres {
+    display: block;
+    margin-left: 16px;
+  }
+
+  .responsive-titres {
+    display: none;
+  }
+
+  .map-input-localisation {
+    height: 52px;
+    width: 300px;
+    margin-left: 16px;
+    justify-content: left;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .map-input-localisation i {
+    background: linear-gradient(#9356DC, #FF79DA);
+    color: white;
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 16px 0px 0px 16px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  form {
+    display: flex;
+    height: 20px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .responsive-form-titres {
+    display: block;
+    margin-left: 16px;
+  }
+
+  .responsive-titres {
+    display: none;
+  }
+
+  .map-input-localisation {
+    height: 52px;
+    width: 300px;
+    margin-left: 16px;
+    justify-content: left;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .map-input-localisation i {
+    background: linear-gradient(#9356DC, #FF79DA);
+    color: white;
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 16px 0px 0px 16px;
+  }
+}
 .margin-fonctionnement {
   margin-left: 14px;
   margin-top: 46px;
@@ -105,6 +227,42 @@ input {
   font-size: 22px;
 }
 
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .margin-fonctionnement {
+    margin-top: 96px;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .margin-fonctionnement {
+    margin-top: 96px;
+  }
+
+  .fonctionnement-responsive {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-bottom: 16px;
+  }
+
+  .fonctionnement-3 .margin-left-p {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .margin-fonctionnement {
+    margin-top: 96px;
+  }
+
+  .fonctionnement-responsive {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-bottom: 16px;
+  }
+
+  .fonctionnement-3 .margin-left-p {
+    margin-left: 10px;
+  }
+}
 article {
   background-color: #F7F7F7;
   padding-bottom: 50px;
@@ -248,6 +406,24 @@ article h2 {
   font-weight: bold;
 }
 
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .cards-restaurant-responsive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .cards-restaurant-responsive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .cards-restaurant-responsive {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -280,6 +456,18 @@ footer p {
   color: white;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .responsive-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .responsive-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .button-primary {
   border-style: none;
   padding: 16px 28px;
@@ -307,6 +495,66 @@ footer p {
   padding: 16px 58px;
 }
 
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .explication-reservation-menu {
+    background-color: transparent;
+  }
+
+  .button-primary-responsive {
+    margin: 0px;
+    position: absolute;
+    left: 256px;
+    top: 1px;
+    box-shadow: none;
+    border-radius: 0px 16px 16px 0px;
+    padding: 18px 10px;
+    font-size: 14px;
+  }
+  .button-primary-responsive:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .explication-reservation-menu {
+    background-color: transparent;
+  }
+
+  .button-primary-responsive {
+    margin: 0px;
+    position: absolute;
+    left: 256px;
+    top: 1px;
+    box-shadow: none;
+    border-radius: 0px 16px 16px 0px;
+    padding: 18px 10px;
+    font-size: 14px;
+  }
+  .button-primary-responsive:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: none;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .explication-reservation-menu {
+    background-color: transparent;
+  }
+
+  .button-primary-responsive {
+    margin: 0px;
+    position: absolute;
+    left: 256px;
+    top: 1px;
+    box-shadow: none;
+    border-radius: 0px 16px 16px 0px;
+    padding: 18px 10px;
+    font-size: 14px;
+  }
+  .button-primary-responsive:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: none;
+  }
+}
 .img-francaise {
   object-fit: cover;
   width: 100%;
@@ -527,7 +775,7 @@ footer p {
     visibility: hidden;
   }
 }
-body {
+.body-invisible {
   animation: visibility-hid 4.5s linear;
 }
 

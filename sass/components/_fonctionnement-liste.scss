@@ -1,6 +1,7 @@
 // VARIABLES
 
 $background-primary: #F7F7F7;
+$purple: #A271E0;
 
 // MIXINS
 
@@ -20,6 +21,24 @@ $background-primary: #F7F7F7;
     
         .position-icon-fontawesome {
             color: #9356DC;
+        }
+    }
+}
+
+@mixin fonctionnement-responsive() {
+    .margin-fonctionnement {
+        margin-top: 96px;
+    }
+
+    .fonctionnement-responsive {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        margin-bottom: 16px;
+    }
+
+    .fonctionnement-3 {
+        .margin-left-p {
+            margin-left: 10px;
         }
     }
 }
@@ -52,3 +71,31 @@ $background-primary: #F7F7F7;
     color: #C6C6C6;
     font-size: 22px;
 }
+
+// RESPONSIVE
+
+// TABLETTE
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .margin-fonctionnement {
+        margin-top: 96px;
+        margin-bottom: 36px;
+    }
+}
+
+// DESKTOP 
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    @include fonctionnement-responsive();
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+
+    @include fonctionnement-responsive();
+}
+
+
+
+

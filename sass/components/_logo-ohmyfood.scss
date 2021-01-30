@@ -1,6 +1,38 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2);
+}
+
+// PAGES MENU 
+
 header a {
     position: absolute;
     font-size: 20px;
     left: 22px;
     top: 22px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    header {
+        justify-content: left;
+
+        svg {
+            margin-left: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+
+    header {
+        justify-content: left;
+
+        svg {
+            margin-left: 16px;
+        }
+    }
 }
