@@ -9,6 +9,7 @@ $purple: #9356DC;
         opacity: 1;
         color: $pink;
         background: linear-gradient($pink, $purple);
+        transform-origin: bottom;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -21,7 +22,7 @@ $purple: #9356DC;
     }
     100% {
         opacity: 1;
-        transform: scale(1.1);
+        transform: scale(1.2, 1.1);
     }
 }
 

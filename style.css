@@ -738,7 +738,7 @@ footer p {
   }
   100% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.2, 1.1);
   }
 }
 .icon-heart-animation {
@@ -753,6 +753,7 @@ footer p {
   opacity: 1;
   color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
+  transform-origin: bottom;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -765,6 +766,7 @@ footer p {
   opacity: 1;
   color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
+  transform-origin: bottom;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
