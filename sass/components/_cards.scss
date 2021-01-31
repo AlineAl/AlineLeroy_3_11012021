@@ -175,7 +175,30 @@ article {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    // PAGES MENU
+
+    .menu-responsive {
+        display: flex;
+    }
+
+    .responsive-main {
+        width: 50%;
+        background-color: $background-primary;
+    }
+
+    .card-generale-main {
+        width: 50%;
+        border-radius: 0px;
+        top: 66px;
+    }
+
+    .cards-menus-responsive {
+        width: 50%;
+    }
 }
+
+// GRAND ECRAN
 
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
 

@@ -1,3 +1,15 @@
+// MIXINS
+
+@mixin logo-responsive() {
+    .header-ohmyfood-responsive {
+        justify-content: left;
+
+        svg {
+            margin-left: 58px;
+        }
+    }
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -17,22 +29,10 @@ header a {
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
 
-    header {
-        justify-content: left;
-
-        svg {
-            margin-left: 16px;
-        }
-    }
+    @include logo-responsive();
 }
 
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
 
-    header {
-        justify-content: left;
-
-        svg {
-            margin-left: 16px;
-        }
-    }
+    @include logo-responsive();
 }

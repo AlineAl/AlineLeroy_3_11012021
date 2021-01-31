@@ -29,19 +29,19 @@ header a {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
-  header {
+  .header-ohmyfood-responsive {
     justify-content: left;
   }
-  header svg {
-    margin-left: 16px;
+  .header-ohmyfood-responsive svg {
+    margin-left: 58px;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
-  header {
+  .header-ohmyfood-responsive {
     justify-content: left;
   }
-  header svg {
-    margin-left: 16px;
+  .header-ohmyfood-responsive svg {
+    margin-left: 58px;
   }
 }
 .map-input-localisation {
@@ -417,6 +417,25 @@ article h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .menu-responsive {
+    display: flex;
+  }
+
+  .responsive-main {
+    width: 50%;
+    background-color: #F7F7F7;
+  }
+
+  .card-generale-main {
+    width: 50%;
+    border-radius: 0px;
+    top: 66px;
+  }
+
+  .cards-menus-responsive {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
   .cards-restaurant-responsive {
@@ -578,6 +597,11 @@ footer p {
   font-size: 28px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .img-francaise {
+    height: 98%;
+  }
+}
 @keyframes progress-green-box {
   0% {
     transform: scaleX(0);
