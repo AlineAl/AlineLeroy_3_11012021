@@ -55,6 +55,7 @@ header a {
 .center-icon-map {
   padding: 0px;
   font-size: 16px;
+  color: #5a5a5a;
 }
 
 input {
@@ -64,6 +65,7 @@ input {
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 16px;
+  color: #5a5a5a;
 }
 
 .explication-reservation-menu {
@@ -78,6 +80,7 @@ input {
 }
 .explication-reservation-menu h3 {
   font-weight: lighter;
+  color: #5a5a5a;
 }
 
 .responsive-form-titres {
@@ -304,6 +307,7 @@ article h2 {
   font-size: 18px;
   margin-left: 14px;
   margin-top: 4px;
+  color: #5A5A5A;
 }
 
 .p-nouveau {
@@ -321,6 +325,7 @@ article h2 {
   right: 26px;
   bottom: -2px;
   font-size: 26px;
+  color: #5A5A5A;
 }
 
 .font-h2-francaise {
@@ -345,8 +350,9 @@ article h2 {
   padding-left: 16px;
   padding-right: 16px;
 }
-.card-primary h3 {
+.card-primary > h3 {
   font-weight: lighter;
+  color: #5A5A5A;
 }
 
 .border-title-menu {
@@ -364,10 +370,15 @@ article h2 {
 }
 .cards-menu h3 {
   font-weight: 600;
+  font-size: 17px;
   margin: 0px;
   padding-bottom: 4px;
   padding-top: 12px;
   padding-left: 8px;
+}
+
+.providence-overflow {
+  overflow: hidden;
 }
 
 .green-box {
@@ -398,7 +409,10 @@ article h2 {
   margin: 0px;
   padding-bottom: 12px;
   padding-left: 8px;
-  font-size: 15px;
+  font-size: 14px;
+}
+.flex-plat-prix .color-grey-p-menu {
+  color: #5A5A5A;
 }
 
 .p-prix {
@@ -615,6 +629,7 @@ footer p {
   position: absolute;
   right: 36px;
   top: 10px;
+  color: #5A5A5A;
 }
 .h1-main-heart h1, .h1-main-heart p {
   font-size: 28px;
@@ -632,7 +647,7 @@ footer p {
 
   .img-responsive {
     width: 1280px;
-    height: 999px;
+    height: 1050px;
   }
 }
 @keyframes progress-green-box {
@@ -780,7 +795,7 @@ footer p {
   opacity: 0;
 }
 .icon-heart-animation:hover {
-  animation: animation-heart 0.5s ease-in-out forwards;
+  animation: animation-heart 0.2s ease-in-out forwards;
   opacity: 1;
   color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -792,7 +807,7 @@ footer p {
   opacity: 0;
 }
 .icon-heart-animation-menus:hover {
-  animation: animation-heart 0.5s ease-in-out forwards;
+  animation: animation-heart 0.2s ease-in-out forwards;
   opacity: 1;
   color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);

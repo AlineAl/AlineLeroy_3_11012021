@@ -5,7 +5,7 @@ $purple: #9356DC;
     opacity: 0;
 
     &:hover {
-        animation: animation-heart 0.5s ease-in-out forwards;
+        animation: animation-heart 0.2s ease-in-out forwards;
         opacity: 1;
         color: $pink;
         background: linear-gradient($pink, $purple);

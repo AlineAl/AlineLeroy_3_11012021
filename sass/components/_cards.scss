@@ -47,6 +47,7 @@ article {
     font-size: 18px;
     margin-left: 14px;
     margin-top: 4px;
+    color:#5A5A5A;
 }
 
 .p-nouveau {
@@ -64,6 +65,7 @@ article {
     right: 26px;
     bottom: -2px;
     font-size: 26px;
+    color:#5A5A5A;
 }
 
 // CARDS PAGES MENU
@@ -90,8 +92,9 @@ article {
     padding-left: 16px;
     padding-right: 16px;
 
-    h3 {
+    & > h3 {
         font-weight: lighter;
+        color: #5A5A5A;
     }
 }
 
@@ -110,11 +113,16 @@ article {
 
     h3 {
         font-weight: 600;
+        font-size: 17px;
         margin: 0px;
         padding-bottom: 4px;
         padding-top: 12px;
         padding-left: 8px;
     }
+}
+
+.providence-overflow {
+    overflow: hidden;
 }
 
 .green-box {
@@ -146,7 +154,11 @@ article {
         margin: 0px;
         padding-bottom: 12px;
         padding-left: 8px;
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .color-grey-p-menu {
+        color: #5A5A5A;
     }
 }
 
