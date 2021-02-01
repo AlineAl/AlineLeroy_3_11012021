@@ -206,4 +206,29 @@ article {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
+
+    // PAGES MENU
+
+    .menu-responsive {
+        display: flex;
+    }
+
+    .responsive-main {
+        width: 50%;
+        background-color: $background-primary;
+    }
+
+    .card-primary {
+        height: 100%;
+    }
+
+    .card-generale-main {
+        width: 50%;
+        border-radius: 0px;
+        top: 66px;
+    }
+
+    .cards-menus-responsive {
+        width: 50%;
+    }
 }

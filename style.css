@@ -442,6 +442,29 @@ article h2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
+
+  .menu-responsive {
+    display: flex;
+  }
+
+  .responsive-main {
+    width: 50%;
+    background-color: #F7F7F7;
+  }
+
+  .card-primary {
+    height: 100%;
+  }
+
+  .card-generale-main {
+    width: 50%;
+    border-radius: 0px;
+    top: 66px;
+  }
+
+  .cards-menus-responsive {
+    width: 50%;
+  }
 }
 footer {
   background-color: #353535;
@@ -574,7 +597,7 @@ footer p {
     box-shadow: none;
   }
 }
-.img-francaise {
+.img-main {
   object-fit: cover;
   width: 100%;
   height: 256px;
@@ -598,8 +621,18 @@ footer p {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
-  .img-francaise {
+  .img-main {
     height: 98%;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .img-main {
+    height: 100%;
+  }
+
+  .img-responsive {
+    width: 1280px;
+    height: 999px;
   }
 }
 @keyframes progress-green-box {
@@ -733,12 +766,10 @@ footer p {
 
 @keyframes animation-heart {
   0% {
-    opacity: 0;
     transform: scale(0);
   }
   100% {
-    opacity: 1;
-    transform: scale(1.2, 1.1);
+    transform: scale(1.1);
   }
 }
 .icon-heart-animation {
@@ -753,7 +784,6 @@ footer p {
   opacity: 1;
   color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
-  transform-origin: bottom;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -766,7 +796,6 @@ footer p {
   opacity: 1;
   color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
-  transform-origin: bottom;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
