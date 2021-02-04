@@ -84,12 +84,24 @@ $purple: #A271E0;
     }
 }
 
+// PETIT ECRAN 
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    .margin-p-petitecran {
+        margin-left: 25px;
+    }
+    
+}
+
 // DESKTOP 
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
 
     @include fonctionnement-responsive();
 }
+
+// GRAND ECRAN
 
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
 
