@@ -21,6 +21,8 @@ I was able to discover SASS with this project. Since then, it is a tool that I u
 
 Thanks to the sharing of other developers and the Openclassrooms courses, I quickly took over SASS. This project was also an opportunity to discover keyframes for CSS animations, a tool that I also appreciate. I could see the importance of the cubic-bezier, of the ease-in-out for a more natural and fluid animation.
 
+[My Github Page](https://alineal.github.io/AlineLeroy_3_11012021/)
+
 ## 🔌 Points to improve
 
 When the code repeats itself, I should have thought about a better use of my variables with SASS. I'm also thinking of training myself to create more complex, more fluid animations. I know I can do animation with Javascript but I realize that CSS animation gives a lot of interesting animations.
