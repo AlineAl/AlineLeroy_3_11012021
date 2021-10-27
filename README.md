@@ -17,11 +17,15 @@ This is a project of Openclassrooms. Reproduce a model using responsive design a
 
 ## 💾 Step by step
 
-I was able to discover SASS with this project. Since then, it is a tool that I use for its practical and efficient side. With SASS we can arrange the contents by file, indent, make mixins...
+I was able to discover SASS with this project. Since then, it is a tool that I use for its practical and efficient side. With SASS we can arrange the contents by file, indent, make mixins...Mobile-first has made the implementation of responsive design easier.
 
 Thanks to the sharing of other developers and the Openclassrooms courses, I quickly took over SASS. This project was also an opportunity to discover keyframes for CSS animations, a tool that I also appreciate. I could see the importance of the cubic-bezier, of the ease-in-out for a more natural and fluid animation.
 
 ## 🔌 Points to improve
+
+When the code repeats itself, I should have thought about a better use of my variables with SASS. I'm also thinking of training myself to create more complex, more fluid animations. I know I can do animation with Javascript but I realize that CSS animation gives a lot of interesting animations.
+
+In future projects, I plan to instead create a file that contains all the media-queries instead of one media-queries per content.
 
 ## 🧬 My references
 
