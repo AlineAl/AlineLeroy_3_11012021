@@ -1,8 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23E06F26&size=24&center=true&lines=Welcome+in+my+ReadMe)](https://git.io/typing-svg)
 
-![Cover](https://github.com/AlineAl/AlineLeroy_2_17122020/blob/main/images/Aline_github.001.png)
-
-### Energize a web page with CSS animations
+### Change a web page with CSS animations
 
 This is a project of Openclassrooms. Reproduce a model using responsive design and adding CSS animations.
 
